@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuadros de Colores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="overlay"></div>
+    <div id="particles-js"></div>
+    <div class="main-box">
+        <h1>¿Qué color es el correcto?</h1>
+        <div id="randomBox" class="randomBox"></div>
+    </div>
+    <div>
+
+        <div id="fixedBoxes">
+            <div class="box" style="background-color: red;"></div>
+            <div class="box" style="background-color: blue;"></div>
+            <div class="box" style="background-color: green;"></div>
+            <div class="box" style="background-color: yellow;"></div>
+        </div>
+    </div>
+    <button id="restartBtn" style="display: none;">Reiniciar Juego</button>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS('particles-js', {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ff5733"
+                },
+            }
+        });
+    </script>
+    
+</body>
+</html>
